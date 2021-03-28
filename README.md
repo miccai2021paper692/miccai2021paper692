@@ -1,7 +1,7 @@
 Hello! :vulcan_salute:
 
 Here you may find the code written for the paper **Anatomy of Domain Shift Impact on U-Net Layers in MRI Segmentation** submitted to MICCAI-2021 conference. Below are the 
-instructions, allowing for reproduction of the experimnets.
+instructions, allowing for reproduction of the experiments.
 
 ### Setting up the Libraries:
 
@@ -37,7 +37,7 @@ There is a minor error in `surface_distance/metrics.py`: the line `102` should b
 
 1) The path to your local copy of CC359 should be specified here: `config/assets/dataset/cc359.config`. You should place `config/assets/dataset/meta.csv` in the same folder with the data. From the available in `CC359` ground truths we used the "Silver standard" binary mask (https://sites.google.com/view/calgary-campinas-dataset/download)
 
-2) You should specify the 'device' on which you are going to run an experiment by setting the corresponding variable 'device', e.g., in `/config/assets/core/` (line 78)
+2) You should specify the 'device' on which you are going to run an experiment by setting the corresponding variable 'device', in `/config/assets/core/` (line 78)
 
 3) To run a single experiment, please follow the steps below:
 
@@ -63,5 +63,5 @@ dpipe-run ../resources.config
 
 where `resources.config` is the general `.config` file of the experiment.
 
-4) First, you should run `one2all` baseline experiment. The models trained are utilized in the dowstream spottune/fine-tuning experiments. 
-You should specify the folder, where the initial models are stored in the `baseline_exp_path` variable, which is present in each downstream experiment config. 
+4) First, you should run `one2all` baseline. The models trained are utilized in the dowstream fine-tuning experiments. 
+You should specify the folder, where these models are stored in the `baseline_exp_path` variable, which is present in each downstream experiment config. 
