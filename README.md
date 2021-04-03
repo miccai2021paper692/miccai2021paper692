@@ -3,6 +3,8 @@ Hello! :vulcan_salute:
 Here you may find the code written for the paper **Anatomy of Domain Shift Impact on U-Net Layers in MRI Segmentation** submitted to MICCAI-2021 conference. Below are the 
 instructions, allowing for reproduction of the experiments.
 
+![Screenshot](spottune_seg.png)
+
 ### Setting up the Libraries:
 
 ###### 1. Add `damri` to the local python:
